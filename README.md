@@ -1,7 +1,7 @@
-SFK - Starter Frontend Kit
+FSK - Front-end starter kit
 =========
 
-SFK is a starterkit to help you getting started with a new HTML5 project. It generates for you a clean customizable template with just what you need to start!
+FSK is a Front-end starterkit to help you getting started with a new HTML5 project. It generates for you a clean customizable template with just what you need to start!
 
 BOWER
 -----
