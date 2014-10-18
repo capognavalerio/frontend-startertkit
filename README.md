@@ -66,6 +66,13 @@ A fast & lightweight polyfill for min/max-width CSS3 Media Queries (for IE 6-8, 
 #### https://github.com/scottjehl/Respond
 ---
 
+### matchMedia() polyfill
+
+Test whether a CSS media type or media query applies
+
+#### https://github.com/paulirish/matchMedia.js
+---
+
 ### html5shiv
 
 HTML5Shiv is a JavaScript workaround, invented by Sjoerd Visscher, to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9, which do not allow unknown elements to be styled without JavaScript.
@@ -313,6 +320,13 @@ Magnific Popup is a responsive lightbox & dialog script with focus on performanc
 Adds support for background-size "cover" and "contain" to IE8
 
 #### https://github.com/louisremi/background-size-polyfill
+---
+
+### picturefill-background
+
+A Responsive Images approach like Picturefill but managing a picture on background-image css attribute.
+
+#### https://github.com/M6Web/picturefill-background
 ---
 
 ### SelectOrDie
