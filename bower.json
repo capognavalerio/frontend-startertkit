@@ -66,7 +66,7 @@
     "jquery-tubular": "git://github.com/monkeymonk/jquery-tubular",
     "magnific-popup": "~0.9.9",
     "background-size-polyfill": "~0.2.0",
-    "picturefill-background": "https://github.com/M6Web/picturefill-background",
+    "picturefill-background": "git://github.com/M6Web/picturefill-background#~1.0.0",
     "SelectOrDie": "~0.1.5",
     "font-awesome": "~4.2.0",
     "holderjs": "~2.4.0",
