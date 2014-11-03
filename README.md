@@ -358,6 +358,13 @@ An awesome replacement for JavaScript's alert.
 #### https://github.com/t4t5/sweetalert
 ---
 
+### BigVideo
+
+The jQuery Plugin for Big Background Video (and Images)
+
+#### https://github.com/dfcb/BigVideo.js
+---
+
 ### Font Awesome
 
 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
