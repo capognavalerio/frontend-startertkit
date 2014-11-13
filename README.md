@@ -365,6 +365,13 @@ The jQuery Plugin for Big Background Video (and Images)
 #### https://github.com/dfcb/BigVideo.js
 ---
 
+### Device.js
+
+Device.js makes it easy to write conditional CSS and/or JavaScript based on device operating system (iOS, Android, Blackberry, Windows, Firefox OS, MeeGo), orientation (Portrait vs. Landscape), and type (Tablet vs. Mobile).
+
+#### https://github.com/matthewhudson/device.js
+---
+
 ### Font Awesome
 
 Font Awesome gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
