@@ -16,7 +16,7 @@ Include in dependencies array what do you need and launch
 LESS structure
 -----------
 
-- controls: these are reusable elements used in the project.
+- components: these are reusable elements used in the project.
 - pages: styles specific to individual pages.
 - layouts: styles specific to different page layouts.
 - theme: all configuration
