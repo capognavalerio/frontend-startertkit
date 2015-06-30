@@ -14,15 +14,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "*",
-    "jquery.easing": "*",
-    "jquery-placeholder": "*",
-    "respondJs": "*",
-    "modernizr": "*",
-    "html5shiv": "*",
     "bootstrap-less": "*",
-    "lesshat": "*",
-    "font-awesome": "*"
   },
   "all-suggest-dependencies": {
     "jquery": "*",
