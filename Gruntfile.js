@@ -99,7 +99,5 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['vendors', 'style', 'js']);
   grunt.registerTask('main',    ['style', 'js']);
-  grunt.registerTask('style',   ['style']);
-  grunt.registerTask('js',      ['js']);
 
 };

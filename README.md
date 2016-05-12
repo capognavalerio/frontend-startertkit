@@ -1,7 +1,7 @@
-FSK - Front-end starter kit
+FSK - Frontend starter kit
 =========
 
-FSK is a Front-end starterkit to help you getting started with a new HTML5 project. It generates for you a clean customizable template with just what you need to start!
+FSK is a Frontend starterkit to help you getting started with a new HTML5 project. It generates for you a clean customizable template with just what you need to start!
 
 BOWER
 -----
@@ -12,6 +12,22 @@ Include in dependencies array what do you need and launch
 ```
     bower install
 ```
+
+GRUNT
+-----
+Before to use grunt you need to install pkgs to run all tasks.
+```
+    npm update --save
+```
+Take a look to default grunt file and change it if you need. After that you can launch your default task.
+```
+    grunt default
+```
+Remember to launch
+```
+    grunt watch
+```
+before to start coding.
 
 LESS structure
 -----------
