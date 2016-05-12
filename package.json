@@ -1,0 +1,19 @@
+{
+  "name": "Frontend starter kit",
+  "description": "",
+  "license": "Private",
+  "dependencies": {
+    "grunt": "*",
+    "grunt-autoprefixer": "*",
+    "grunt-bower-concat": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-jshint": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-contrib-less": "*",
+    "less-plugin-autoprefix": "*",
+    "less-plugin-clean-css": "*"
+  }
+}
