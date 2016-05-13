@@ -1,0 +1,15 @@
+{
+  "name": "frontend-starter-kit",
+  "authors": [
+    "capogna.valerio@gmail.com"
+  ],
+  "license": "Private",
+  "homepage": "https://github.com/capognavalerio/frontend-startertkit",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
