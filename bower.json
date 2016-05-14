@@ -11,5 +11,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "fastclick": "*",
+    "outdated-browser": "*",
+    "device.js": "devicejs#*",
+    "font-awesome": "*"
+  }
 }
