@@ -3,9 +3,13 @@
 	[
 		{
 			"path": ".",
-            "name": "Frontend Starter Kit",
+            "name": "FSK - Frontend Starter Kit",
             "file_exclude_patterns" : ["*.sublime-*"],
             "folder_exclude_patterns" : ["node_modules", "bower_components", ".tmp"]
-		}
+		},
+        {
+            "path": "src/less",
+            "name": "FSK - Style"
+        }
 	]
 }
