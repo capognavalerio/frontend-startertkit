@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           'css': '.tmp/css/vendors.css'
         },
         options: { separator : ';' },
-        exclude: [],
+        exclude: ['font-awesome'],
         mainFiles: {},
         dependencies: {}
       }
@@ -76,10 +76,17 @@ module.exports = function(grunt) {
     },
     copy: {
       vendors: {
-        expand: true,
-        cwd: 'bower_components/font-awesome/fonts',
-        src: '**',
-        dest: 'fonts/font-awesome'
+        files: [{
+          expand: true,
+          cwd: 'bower_components/font-awesome/fonts',
+          src: '**',
+          dest: 'fonts/font-awesome'
+        }, {
+          expand: true,
+          cwd: 'bower_components/outdated-browser/outdatedbrowser/lang',
+          src: '**',
+          dest: 'dist/js/outdated-broswser'
+        }]
       },
     }
   });
