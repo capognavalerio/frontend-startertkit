@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           ]
         },
         files: {
-          'dist/css/style.min.css': 'src/less/theme.less'
+          'dist/css/style.min.css': 'src/less/style.less'
         }
       }
     },
