@@ -1,4 +1,3 @@
-
 (function($, FastClick, outdatedBrowser) {
 
   // Initialize Fastclick to remove click delays on browsers with touch UIs
