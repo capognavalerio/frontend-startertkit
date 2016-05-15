@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           'css': '.tmp/css/vendors.css'
         },
         options: { separator : ';' },
-        exclude: ['font-awesome'],
+        exclude: [],
         mainFiles: {},
         dependencies: {}
       }
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
           ]
         },
         files: {
-          'dist/css/style.min.css': 'src/less/theme.less'
+          'dist/css/style.min.css': 'src/less/style.less'
         }
       }
     },
@@ -73,21 +73,6 @@ module.exports = function(grunt) {
           livereload: true
         }
       }
-    },
-    copy: {
-      vendors: {
-        files: [{
-          expand: true,
-          cwd: 'bower_components/font-awesome/fonts',
-          src: '**',
-          dest: 'fonts/font-awesome'
-        }, {
-          expand: true,
-          cwd: 'bower_components/outdated-browser/outdatedbrowser/lang',
-          src: '**',
-          dest: 'dist/js/outdated-broswser'
-        }]
-      },
     }
   });
 
@@ -98,9 +83,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors']);
+  grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin']);
   grunt.registerTask('style',   ['less']);
   grunt.registerTask('js',      ['jshint:main', 'concat:main', 'uglify:main']);
 
