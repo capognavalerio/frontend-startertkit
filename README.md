@@ -29,10 +29,7 @@ Remember to launch
 ```
 before to start coding.
 
-LESS structure
------------
+LESS Atomic design
+------------------
 
-- components: these are reusable elements used in the project.
-- pages: styles specific to individual pages.
-- layouts: styles specific to different page layouts.
-- theme: all configuration
+Take a look to https://github.com/capognavalerio/atomic-less
