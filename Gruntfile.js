@@ -5,15 +5,6 @@ module.exports = function(grunt) {
     jshint: {
       main: 'src/js/**/*.js'
     },
-    concat: {
-      options: {
-        separator: ';',
-      },
-      main: {
-        src: 'src/js/**/*.js',
-        dest: '.tmp/js/scripts.js'
-      },
-    },
     bower_concat: {
       all: {
         dest: {
@@ -90,12 +81,11 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
-  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors']);
   grunt.registerTask('style',   ['less']);
-  grunt.registerTask('js',      ['jshint:main', 'concat:main', 'uglify:main']);
+  grunt.registerTask('js',      ['jshint:main', 'uglify:main']);
 
   grunt.registerTask('default', ['vendors', 'style', 'js']);
   grunt.registerTask('main',    ['style', 'js']);

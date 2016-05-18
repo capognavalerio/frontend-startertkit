@@ -6,7 +6,6 @@
     "grunt": "*",
     "grunt-autoprefixer": "*",
     "grunt-bower-concat": "*",
-    "grunt-contrib-concat": "*",
     "grunt-contrib-copy": "*",
     "grunt-contrib-cssmin": "*",
     "grunt-contrib-jshint": "*",
