@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       },
       main: {
         files: {
-          'dist/js/scripts.min.js': '.tmp/js/scripts.js'
+          'dist/js/scripts.min.js': 'src/js/scripts.js'
         }
       }
     },

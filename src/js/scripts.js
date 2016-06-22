@@ -8,7 +8,7 @@
     bgColor: '#f25648',
     color: '#ffffff',
     lowerThan: 'transform', // < IE10
-    languagePath: 'dist/js/outdated-browser/lang/' + $('html').attr('lang') + '.html'
+    languagePath: 'js/outdated-browser/lang/' + $('html').attr('lang') + '.html'
   });
 
 })(jQuery, FastClick, outdatedBrowser);
