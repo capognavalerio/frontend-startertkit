@@ -12,7 +12,9 @@ module.exports = function(grunt) {
           'css': '.tmp/css/vendors.css'
         },
         options: { separator : ';' },
-        exclude: [],
+        exclude: [
+          'device.js'
+        ],
         mainFiles: {},
         dependencies: {}
       }
@@ -72,10 +74,17 @@ module.exports = function(grunt) {
     },
     copy: {
       vendors: {
-        expand: true,
-        cwd: 'bower_components/outdated-browser/outdatedbrowser/lang',
-        src: '**',
-        dest: 'dist/js/outdated-browser'
+        files: [{
+          expand: true,
+          cwd: 'bower_components/outdated-browser/outdatedbrowser/lang',
+          src: '**', // copy all languages file or choose languages that you need []
+          dest: 'dist/js/outdated-browser'
+        }, {
+          expand: true,
+          cwd: 'bower_components/device.js/lib',
+          src: 'device.min.js',
+          dest: 'dist/js'
+        }]
       }
     },
     watch: {
