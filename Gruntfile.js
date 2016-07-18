@@ -85,10 +85,7 @@ module.exports = function(grunt) {
       },
       css: {
         files: ['src/less/**/*.less'],
-        tasks: ['less'],
-        options: {
-          livereload: true
-        }
+        tasks: ['less']
       }
     }
   });
