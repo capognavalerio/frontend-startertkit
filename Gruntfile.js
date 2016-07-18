@@ -87,6 +87,125 @@ module.exports = function(grunt) {
         }]
       }
     },
+    modernizr: {
+      dist: {
+        "crawl": false,
+        "customTests": [],
+        "dest": "dist/js/modernizr.min.js",
+        // Define any tests you want to explicitly include
+        "tests": [
+          "audio",
+          "canvas",
+          "cookies",
+          "hashchange",
+          "history",
+          "json",
+          "pointerevents",
+          "requestanimationframe",
+          "svg",
+          "touchevents",
+          "unicode",
+          "video",
+          "cssanimations",
+          "appearance",
+          "backdropfilter",
+          "backgroundblendmode",
+          "backgroundcliptext",
+          "bgpositionshorthand",
+          "bgpositionxy",
+          [
+            "bgrepeatspace",
+            "bgrepeatround"
+          ],
+          "backgroundsize",
+          "bgsizecover",
+          "borderimage",
+          "borderradius",
+          "boxshadow",
+          "boxsizing",
+          "csscalc",
+          "checked",
+          "csschunit",
+          "csscolumns",
+          "cubicbezierrange",
+          "display-runin",
+          "displaytable",
+          "ellipsis",
+          "cssescape",
+          "cssexunit",
+          "cssfilters",
+          "flexbox",
+          "flexboxlegacy",
+          "flexboxtweener",
+          "flexwrap",
+          "fontface",
+          "generatedcontent",
+          "cssgradients",
+          "csshairline",
+          "hsla",
+          [
+            "csshyphens",
+            "softhyphens",
+            "softhyphensfind"
+          ],
+          "cssinvalid",
+          "lastchild",
+          "cssmask",
+          "mediaqueries",
+          "multiplebgs",
+          "nthchild",
+          "objectfit",
+          "opacity",
+          "overflowscrolling",
+          "csspointerevents",
+          "csspositionsticky",
+          "csspseudoanimations",
+          "csspseudotransitions",
+          "cssreflections",
+          "regions",
+          "cssremunit",
+          "cssresize",
+          "rgba",
+          "cssscrollbar",
+          "scrollsnappoints",
+          "shapes",
+          "siblinggeneral",
+          "subpixelfont",
+          "supports",
+          "target",
+          "textalignlast",
+          "textshadow",
+          "csstransforms",
+          "csstransforms3d",
+          "preserve3d",
+          "csstransitions",
+          "userselect",
+          "cssvalid",
+          "cssvhunit",
+          "cssvmaxunit",
+          "cssvminunit",
+          "cssvwunit",
+          [
+            "devicemotion",
+            "deviceorientation"
+          ],
+          "placeholder",
+          "sizes",
+          "srcset",
+          "xhrresponsetypejson",
+          "scriptasync",
+          "getusermedia",
+          [
+            "atobbtoa"
+          ],
+          "matchmedia"
+        ],
+        "options": [
+          "setClasses"
+        ],
+        "uglify": true
+      }
+    },
     watch: {
       scripts: {
         files: ['src/js/**/*.js'],
@@ -107,8 +226,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks("grunt-modernizr");
 
-  grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors']);
+  grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors', 'modernizr:dist']);
   grunt.registerTask('style',   ['less']);
   grunt.registerTask('js',      ['jshint:main', 'concat:main', 'uglify:main']);
 
