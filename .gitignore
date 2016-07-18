@@ -1,4 +1,4 @@
 .tmp
-*.sublime-*
+*.sublime-workspace
 bower_components
 node_modules
