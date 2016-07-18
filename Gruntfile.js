@@ -17,6 +17,24 @@ module.exports = function(grunt) {
         dependencies: {}
       }
     },
+    concat: {
+      options: {
+        separator: ';',
+      },
+      main: {
+        src: 'src/js/*.js',
+        /*
+        Use array to concat js files
+        src: [
+          'src/js/script-1.js',
+          'src/js/script-2.js',
+          'src/js/script-3.js',
+          'src/js/script-4.js',
+        ],
+        */
+        dest: '.tmp/js/scripts.js',
+      },
+    },
     cssmin: {
       target: {
         files: {
@@ -32,7 +50,7 @@ module.exports = function(grunt) {
       },
       main: {
         files: {
-          'dist/js/scripts.min.js': 'src/js/scripts.js'
+          'dist/js/scripts.min.js': '.tmp/js/scripts.js'
         }
       }
     },
@@ -77,6 +95,7 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-bower-concat');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
@@ -85,9 +104,8 @@ module.exports = function(grunt) {
 
   grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors']);
   grunt.registerTask('style',   ['less']);
-  grunt.registerTask('js',      ['jshint:main', 'uglify:main']);
+  grunt.registerTask('js',      ['jshint:main', 'concat:main', 'uglify:main']);
 
   grunt.registerTask('default', ['vendors', 'style', 'js']);
   grunt.registerTask('main',    ['style', 'js']);
-
 };
