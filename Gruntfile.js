@@ -206,16 +206,30 @@ module.exports = function(grunt) {
         "uglify": true
       }
     },
+    notify: {
+      scripts: {
+        options: {
+          title: 'JS Task complete',
+          message: 'jshint scripts, concatenated and uglified'
+        }
+      },
+      css: {
+        options: {
+          title: 'CSS Task complete',
+          message: 'less files compiled'
+        }
+      }
+    },
     watch: {
       scripts: {
         files: ['src/js/**/*.js'],
-        tasks: ['js']
+        tasks: ['js', 'notify:scripts']
       },
       css: {
         files: ['src/less/**/*.less'],
-        tasks: ['less']
+        tasks: ['less', 'notify:css']
       }
-    }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-jshint');
@@ -227,6 +241,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks("grunt-modernizr");
+  grunt.loadNpmTasks('grunt-notify');
 
   grunt.registerTask('vendors', ['bower_concat', 'uglify:vendors', 'cssmin', 'copy:vendors', 'modernizr:dist']);
   grunt.registerTask('style',   ['less']);
