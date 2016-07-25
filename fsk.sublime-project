@@ -4,7 +4,7 @@
 		{
 			"path": ".",
             "name": "Frontend Starter Kit",
-            "folder_exclude_patterns": [".tmp", "node_modules", "bower_components"],
+            "folder_exclude_patterns": ["node_modules", "bower_components"],
             "file_exclude_patterns": ["*.sublime-*"]
 		}
 	]

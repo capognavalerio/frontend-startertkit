@@ -8,8 +8,8 @@ module.exports = function(grunt) {
     bower_concat: {
       all: {
         dest: {
-          'js': '.tmp/js/vendors.js',
-          'css': '.tmp/css/vendors.css'
+          'js': 'src/.tmp/js/vendors.js',
+          'css': 'src/.tmp/css/vendors.css'
         },
         options: { separator : ';' },
         exclude: [
@@ -34,25 +34,25 @@ module.exports = function(grunt) {
           'src/js/script-4.js',
         ],
         */
-        dest: '.tmp/js/scripts.js',
+        dest: 'src/.tmp/js/scripts.js',
       },
     },
     cssmin: {
       target: {
         files: {
-          'dist/css/vendors.min.css': '.tmp/css/vendors.css'
+          'dist/css/vendors.min.css': 'src/.tmp/css/vendors.css'
         }
       }
     },
     uglify: {
       vendors: {
         files: {
-          'dist/js/vendors.min.js': '.tmp/js/vendors.js'
+          'dist/js/vendors.min.js': 'src/.tmp/js/vendors.js'
         }
       },
       main: {
         files: {
-          'dist/js/scripts.min.js': '.tmp/js/scripts.js'
+          'dist/js/scripts.min.js': 'src/.tmp/js/scripts.js'
         }
       }
     },
