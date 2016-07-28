@@ -6,8 +6,7 @@ FSK is a Frontend starterkit to help you getting started with a new HTML5 projec
 BOWER
 -----
 
-The bower file contains a great collection of js plugin and less utils that can help you to develope your project.
-Include in dependencies array what do you need and launch
+The bower file is very minimal and contains default dependencies for a website project.
 
 ```
     bower install
@@ -15,15 +14,15 @@ Include in dependencies array what do you need and launch
 
 GRUNT
 -----
-Before to use grunt you need to install pkgs to run all tasks.
+Before to use grunt you need to install all packages that are defined in package.json file to run all tasks defined into Gruntfile.js
 ```
     npm update --save
 ```
-Take a look to default grunt file and change it if you need. After that you can launch your default task.
+After that you have to launch the default grunt task to create minify vendors and project css and js files.
 ```
     grunt default
 ```
-Remember to launch
+Remember to launch the watch task
 ```
     grunt watch
 ```
