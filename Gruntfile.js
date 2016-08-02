@@ -13,7 +13,8 @@ module.exports = function(grunt) {
         },
         options: { separator : ';' },
         exclude: [
-          'device.js'
+          'device.js',
+          'font-awesome'
         ],
         mainFiles: {},
         dependencies: {}
@@ -84,6 +85,11 @@ module.exports = function(grunt) {
           cwd: 'bower_components/device.js/lib',
           src: 'device.min.js',
           dest: 'dist/js'
+        }, {
+          expand: true,
+          cwd: 'bower_components/font-awesome/fonts',
+          src: '**',
+          dest: 'dist/fonts/font-awesome'
         }]
       }
     },
