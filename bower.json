@@ -16,6 +16,7 @@
     "jquery": "*",
     "fastclick": "*",
     "outdated-browser": "*",
-    "device.js": "devicejs#*"
+    "device.js": "devicejs#*",
+    "font-awesome": "*"
   }
 }
