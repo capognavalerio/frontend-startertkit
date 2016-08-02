@@ -14,7 +14,8 @@ module.exports = function(grunt) {
         options: { separator : ';' },
         exclude: [
           'device.js',
-          'font-awesome'
+          'font-awesome',
+          'bootstrap'
         ],
         mainFiles: {},
         dependencies: {}
