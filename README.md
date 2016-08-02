@@ -38,3 +38,7 @@ MODERNIZR
 Take a look to https://github.com/Modernizr/customiz for configuration.
 Modernizr has a lot of tests. The best practice is to create own configuration using the modernizr builder https://modernizr.com/download?setclasses. Choose what you need and download the configuration file that you will integrate in grunt file.
 Actually FSK has tests for a website project.
+
+FONTAWESOME
+-----------
+Include Font Awesome in FSK. It gives you scalable vector icons that can instantly be customized — size, color, drop shadow, and anything that can be done with the power of CSS.
