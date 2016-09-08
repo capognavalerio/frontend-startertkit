@@ -1,10 +1,10 @@
 {
-  "name": "frontend-starter-kit",
+  "name": "your_project_name",
   "authors": [
-    "capogna.valerio@gmail.com"
+    "john@doe.com"
   ],
   "license": "Private",
-  "homepage": "https://github.com/capognavalerio/frontend-startertkit",
+  "homepage": "your_home_url",
   "ignore": [
     "**/.*",
     "node_modules",
