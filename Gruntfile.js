@@ -46,6 +46,9 @@ module.exports = function(grunt) {
       }
     },
     uglify: {
+      options: {
+        sourceMap: true
+      },
       vendors: {
         files: {
           'dist/js/vendors.min.js': 'src/.tmp/js/vendors.js'
