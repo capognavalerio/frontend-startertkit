@@ -23,6 +23,7 @@ module.exports = function(grunt) {
     concat: {
       options: {
         separator: ';',
+        stripBanners: true
       },
       main: {
         src: 'src/js/*.js',
@@ -81,7 +82,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: 'bower_components/outdated-browser/outdatedbrowser/lang',
-          src: '**', // copy all languages file or choose languages that you need []
+          src: ['en.html'], // Choose languages that you need
           dest: 'dist/js/outdated-browser'
         }, {
           expand: true,
